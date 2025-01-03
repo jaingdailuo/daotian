@@ -1,0 +1,276 @@
+/* 全局样式 */
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 76px; /* 为固定导航栏留出空间 */
+}
+
+/* 导航栏样式 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* 响应式调整 */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+} 
+
+/* 轮播图样式 */
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 学校简介部分 */
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    color: #333;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #007bff;
+}
+
+.school-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    margin-bottom: 25px;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 400px;
+    }
+    
+    .school-intro {
+        font-size: 1rem;
+    }
+} 
+
+/* 新闻卡片样式 */
+.news-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* 教师团队样式 */
+.teacher-card {
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+}
+
+.teacher-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.teacher-subject {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.teacher-desc {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* 招生信息样式 */
+.admission-list {
+    list-style: none;
+    padding: 0;
+}
+
+.admission-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.admission-list i {
+    color: #28a745;
+    margin-right: 10px;
+}
+
+/* 联系表单样式 */
+.contact-form .form-control {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+.contact-info h4 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* 页脚样式 */
+footer {
+    margin-top: 50px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .contact-info {
+        margin-bottom: 30px;
+    }
+    
+    .teacher-card {
+        margin-bottom: 30px;
+    }
+} 
+
+/* 添加logo相关样式 */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-brand .school-logo {
+    transition: transform 0.3s ease;
+    height: 40px !important;
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.navbar-brand:hover .school-logo {
+    transform: scale(1.05);
+}
+
+.navbar-brand .school-name {
+    font-weight: bold;
+    color: #003366;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+/* 在移动端调整logo大小 */
+@media (max-width: 768px) {
+    .school-logo {
+        height: 35px;
+    }
+    
+    .school-name {
+        font-size: 1rem;
+    }
+} 
+
+/* 招生信息轮播图样式 */
+#admissionCarousel {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#admissionCarousel .carousel-item {
+    height: 400px;
+}
+
+#admissionCarousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#admissionCarousel .carousel-indicators {
+    bottom: -40px;
+}
+
+#admissionCarousel .carousel-indicators button {
+    background-color: #007bff;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    #admissionCarousel .carousel-item {
+        height: 300px;
+    }
+} 
