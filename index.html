@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长沙市稻田中学官方网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/dtlogo.png" alt="稻田中学校徽" class="school-logo">
+                <span class="school-name">长沙市稻田中学</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">校园新闻</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teachers">教师团队</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#admission">招生信息</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#students">学生风采</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">校园设施</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图部分 -->
+    <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/school-statue.jpg" class="d-block w-100" alt="徐特立雕像">
+                <div class="carousel-caption">
+                    <h2>欢迎来到稻田中学</h2>
+                    <p>革命第一，工作第一，他人第一</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/school-2.jpg" class="d-block w-100" alt="教学楼">
+                <div class="carousel-caption">
+                    <h2>优质教育</h2>
+                    <p>先进的教学设施，专业的教师团队</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/student-performance.jpg?v=1" class="d-block w-100" alt="学生文艺表演">
+                <div class="carousel-caption">
+                    <h2>多彩校园生活</h2>
+                    <p>三年时光，承载汗水与笑声，汇聚成长与收获</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- 学校简介 -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">学校简介</h2>
+                    <p class="school-intro">
+                        长沙市稻田中学创建于1912年，原名湖南省立第一女子师范学校（稻田女师）。学校位于长沙市雨花区砂子塘路121号，是一所公立全日制普通高级中学。学校占地面积21340平方米，现有教职工400余位，在校学生4000余名。
+                    </p>
+                    <p class="school-intro">
+                        学校由著名教育家朱剑凡创办，秉承"志诚仁爱"的校训，致力于为学生提供优质的教育资源。学校开设汉语、英语等课程，注重学生的全面发展。
+                    </p>
+                    <div class="school-features">
+                        <div class="feature-item">
+                            <i class="bi bi-book"></i>
+                            <h4>优质教育</h4>
+                            <p>百年名校，历史悠久</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-trophy"></i>
+                            <h4>特色发展</h4>
+                            <p>志诚仁爱，全面育人</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/school-entrance.jpg" alt="稻田中学正门" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校园新闻 -->
+    <section id="news" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">校园新闻</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card news-card">
+                        <img src="images/news-1.jpg" class="card-img-top" alt="学生篮球活动">
+                        <div class="card-body">
+                            <div class="news-date">2024-03-20</div>
+                            <h5 class="card-title">我校举办2024年春季篮球赛</h5>
+                            <p class="card-text">本次运动会展现了我校学生积极向上的精神面貌...</p>
+                            <a href="#" class="btn btn-outline-primary">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 可以添加更多新闻卡片 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 教师团队 -->
+    <section id="teachers" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">优秀教师团队</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="teacher-card text-center">
+                        <div class="teacher-image">
+                            <img src="images/teacher-message.jpg" alt="优秀教师" class="rounded-circle">
+                        </div>
+                        <h4>优秀教师介绍</h4>
+                        <p class="teacher-subject">教师风采</p>
+                        <p class="teacher-desc">立德树人，教书育人</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="teacher-card text-center">
+                        <div class="teacher-image">
+                            <img src="images/teacher-yang.jpg" alt="杨戬老师" class="rounded-circle">
+                        </div>
+                        <h4>杨戬老师</h4>
+                        <p class="teacher-subject">教师风采</p>
+                        <p class="teacher-desc">热爱教育事业，致力于培养学生全面发展</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="teacher-card text-center">
+                        <div class="teacher-image">
+                            <img src="images/teacher-zhang.jpg" alt="张容老师" class="rounded-circle">
+                        </div>
+                        <h4>张容老师</h4>
+                        <p class="teacher-subject">教师风采</p>
+                        <p class="teacher-desc">关爱学生，用心教学</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 招生信息 -->
+    <section id="admission" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">招生信息</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="admission-info">
+                        <h3>2024年秋季招生简章</h3>
+                        <ul class="admission-list">
+                            <li><i class="bi bi-check-circle"></i> 招生年级：初一、初二、初三、高一、高二、高三</li>
+                            <li><i class="bi bi-check-circle"></i> 招生人数：每班50人</li>
+                            <li><i class="bi bi-check-circle"></i> 报名时间：2024年6月1日-30日</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">在线报名</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="admissionCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#admissionCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#admissionCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#admissionCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#admissionCarousel" data-bs-slide-to="3"></button>
+                        </div>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="images/admission-1.jpg" class="d-block w-100" alt="学生休闲时光">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/admission-2.jpg" class="d-block w-100" alt="方特游玩">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/admission-3.jpg" class="d-block w-100" alt="校园生活">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/admission-4.jpg" class="d-block w-100" alt="高考加油合影">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#admissionCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#admissionCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">联系我们</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4><i class="bi bi-geo-alt"></i> 学校地址</h4>
+                        <p>长沙市雨花区砂子塘路121号</p>
+                        
+                        <h4><i class="bi bi-telephone"></i> 联系电话</h4>
+                        <p>0731-123456789</p>
+                        
+                        <h4><i class="bi bi-envelope"></i> 电子邮箱</h4>
+                        <p>258004808@qq.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="您的姓名">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="电子邮箱">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="留言内容"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>长沙市稻田中学</h5>
+                    <p>志诚仁爱</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="bi bi-wechat"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <small>&copy; 2024 长沙市稻田中学 版权所有</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- 平滑滚动脚本 -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
